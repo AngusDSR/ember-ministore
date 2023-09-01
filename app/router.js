@@ -12,4 +12,5 @@ Router.map(function () {
   });
   // This had to be manually adjusted after generating the route
   this.route('item', { path: '/item/:item_id' });
+  this.route('not-found', { path: '/*path' });
 });
