@@ -7,10 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('plants', function () {
-    this.route('tropical');
-  });
   // This had to be manually adjusted after generating the route
   this.route('item', { path: '/item/:item_id' });
   this.route('not-found', { path: '/*path' });
+  this.route('cart', { path: '/shopping-cart' });
 });
