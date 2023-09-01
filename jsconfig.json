@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // Specifies the ECMAScript version to target (ES6 in this case).
+    "target": "es6",
+    // Enables experimental decorators support in TypeScript.
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    // Excludes the "node_modules" directory from being processed.
+    "node_modules",
+    // Excludes the "dist" directory from being processed.
+    "dist"
+  ]
+}
