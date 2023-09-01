@@ -1,3 +1,24 @@
 {{page-title "Cart"}}
-Your shopping cart is empty.
+<main class="container mt-3 d-flex flex-column align-items-center">
+  <h1>Your cart</h1>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">
+        <LinkTo @route="index">
+          Home
+        </LinkTo>
+      </li>
+      <li class="breadcrumb-item">
+        <LinkTo @route="cart">
+          Shopping cart
+        </LinkTo>
+      </li>
+    </ol>
+  </nav>
+  <hr>
+  <section class="w-50 mb-5 d-flex flex-column align-items-center">
+    <p>Your shopping cart is empty.</p>
+    <i class="fa-regular fa-face-sad-cry fs-1"></i>
+  </section>
+</main>
 {{outlet}}
