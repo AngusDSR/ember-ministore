@@ -1,5 +1,5 @@
 {{page-title "Cart"}}
-<main class="container mt-3 d-flex flex-column align-items-center">
+<main class="container mt-3">
   <h1>Your cart</h1>
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
@@ -16,9 +16,37 @@
     </ol>
   </nav>
   <hr>
-  <section class="w-50 mb-5 d-flex flex-column align-items-center">
-    <p>Your shopping cart is empty.</p>
-    <i class="fa-regular fa-face-sad-cry fs-1"></i>
+  <section class="w-50 ms-auto text-end mb-5">
+    <div class="row">
+      <span class="col">Subtotal</span>
+      <span class="col">50</span>
+    </div>
+    <div class="row">
+      <span class="col">Total</span>
+      <span class="col">45</span>
+    </div>
   </section>
+  <button class="btn btn-success ms-auto float-end">
+    Check out
+  </button>
+  <LinkTo @route="index">
+    <button class="btn btn-primary ms-auto me-2 float-end">
+      Continue shopping
+    </button>
+  </LinkTo>
+
+  {{!-- Partial for when empty --}}
+  {{!-- <section class="w-50 mb-5 d-flex flex-column align-items-center"> --}}
+    {{!-- Make this into a partial --}}
+    {{!-- <p>Your shopping cart is empty.</p> --}}
+    {{!-- <i class="fa-regular fa-face-sad-cry fs-1"></i> --}}
+
+    {{!-- <LinkTo @route="index">
+      <button class="btn btn-primary mt-3">
+        Continue shopping
+      </button>
+    </LinkTo> --}}
+  {{!-- </section>
+   --}}
 </main>
 {{outlet}}
