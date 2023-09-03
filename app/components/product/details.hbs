@@ -11,13 +11,14 @@
     </div>
   </section>
 
-  {{!-- prices --}}
-  <section>
+  {{!-- price --}}
+  <section class={{unless @isDetails 'h4'}}>
     <del class=""small text-black-50>£175</del>
     <i class="text-danger fw-bold">£99</i>
   </section>
 
   {{!-- colors --}}
+  {{#if @isDetails}}
   <div>
     <h5>Colors</h5>
     <div class="product-colors active-{{@color}}">
@@ -29,4 +30,5 @@
       ></span>
     </div>
   </div>
+  {{/if}}
 </div>
