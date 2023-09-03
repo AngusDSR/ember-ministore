@@ -19,18 +19,18 @@
   <section class="w-50 ms-auto text-end mb-5">
     <div class="row">
       <span class="col">Subtotal</span>
-      <span class="col">50</span>
+      <span class="col">{{  currency this.subtotal }}</span>
     </div>
     <div class="row">
       <span class="col">Total</span>
-      <span class="col">45</span>
+      <span class="col">{{ currency this.total }}</span>
     </div>
   </section>
-  <button class="btn btn-success ms-auto float-end">
+  <button class="btn btn-success ms-auto float-end" type="button">
     Check out
   </button>
   <LinkTo @route="index">
-    <button class="btn btn-primary ms-auto me-2 float-end">
+    <button class="btn btn-primary ms-auto me-2 float-end" type="button">
       Continue shopping
     </button>
   </LinkTo>

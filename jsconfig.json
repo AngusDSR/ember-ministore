@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    // Specifies the ECMAScript version to target (ES6 in this case).
-    "target": "es6",
+    // Specifies the ECMAScript version to target (ES2015 in this case).
+    "target": "es2015",
     // Enables experimental decorators support in TypeScript.
     "experimentalDecorators": true
   },
