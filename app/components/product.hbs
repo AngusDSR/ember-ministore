@@ -1,26 +1,4 @@
 <LinkTo @route="item" @model="1" class="product">
-  <div class="product-image">
-    <img src="assets/images/beats-solo-red.png" alt="">
-  </div>
-  <div class="product-details">
-    {{!-- product name --}}
-    <section>
-      <h3>Beats Solo Wireless Headphones</h3>
-      <div class="text-warning">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa-solid fa-star-half-stroke"></i>
-      </div>
-    </section>
-
-    {{!-- prices --}}
-    <section>
-      <del class=""small text-black-50>£175</del>
-      <i class="text-danger fw-bold">£99</i>
-    </section>
-
-
-  </div>
+  <Product::Image />
+  <Product::Details />
 </LinkTo>

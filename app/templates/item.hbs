@@ -1,5 +1,17 @@
 {{page-title "Item"}}
 <GeneralContainer>
-  item {{this.model}} works!
+  <div class="product item-details-page">
+    <Product::Image />
+    <Product::Details @color={{this.color}} @onChangeColor={{this.onChangeColor}} />
+  </div>
+  <h5>
+    <ul>
+      <li>Up to 40 hours of battery life</li>
+      <li>Fast Fuel: A 5-minute charge provides 3 hours of playback</li>
+      <li>LED fuel gauge shows full or depleted charge level when plugged</li>
+      <li>Charge via Micro-USB cable</li>
+      <li>Rechargeable lithium-ion battery</li>
+    </ul>
+  </h5>
 </GeneralContainer>
 {{outlet}}
